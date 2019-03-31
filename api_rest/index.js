@@ -18,7 +18,7 @@ var server = http.createServer((req,res) => {
     // Quitar los slack y backslash
     var trimmedPath = path.replace(/^\/+|\/+$/g,'');
 
-    console.log('trimmedPath',trimmedPath);
+    
 
     console.log('path',path);
 
@@ -27,7 +27,7 @@ var server = http.createServer((req,res) => {
     res.end('Hello word');
 
     // Log de request path
-
+    console.log('trimmedPath',trimmedPath);
 });
 
 server.listen(3000, () => {
